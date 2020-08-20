@@ -20,12 +20,10 @@ public:
 
 	const char* id() const;
 
-	virtual void simulate_AI(const double seconds_to_simulate, const Assets* assets, const Scene* scene, const Configuration* config, Input* input) = 0;
+	virtual void simulate_AI(const double seconds_to_simulate, const Assets* assets, const Scene* scene, const Configuration* config) = 0;
 	virtual void simulate_physics(const double seconds_to_simulate, const Assets* assets, const Scene* scene, const Configuration* config);
 	virtual void render(const double seconds_to_simulate, const Assets* assets, const Scene* scene, const Configuration* config) = 0;
 	glm::mat4x4 transformation(const Scene* scene, const Configuration* config);
-
-	void translate(const glm::vec3 translation);
 
 protected:
 	const char* _id;

@@ -1,7 +1,2 @@
-﻿  engine.cpp
-  game_object.cpp
-  game_scene.cpp
-  main.cpp
-  scene.cpp
-  Generating Code...
+﻿  hexagon_mesh.cpp
   feature_complete.vcxproj -> C:\Users\Mitch\Desktop\Semester 4\Advanced Game Engine Programming\PrototypeAssignment\GameEngine_Prototype\Prototype\x64\Debug\feature_complete.exe

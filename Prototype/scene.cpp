@@ -3,7 +3,6 @@
 #include "scene.h"
 #include "game_object.h"
 
-
 Scene::Scene(const char* id)
 	: _id(id)
 {
@@ -39,19 +38,4 @@ Game_Object* Scene::get_game_object(const char* id) const
 const char* Scene::id() const
 {
 	return _id;
-}
-
-glm::vec3 Scene::camera_position() const
-{
-	return _camera_position;
-}
-
-glm::vec3 Scene::camera_forward() const
-{
-	return _camera_forward;
-}
-
-glm::vec3 Scene::camera_up() const
-{
-	return _camera_up;
 }

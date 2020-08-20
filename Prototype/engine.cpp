@@ -79,17 +79,17 @@ Engine::Engine(const char* game_name, Configuration* config)
 Engine::~Engine()
 {
 }
-void Engine::simulate(const double seconds_to_simulate, const Assets* assets, const Scene* scene, const Configuration* config, Input* input)
+void Engine::simulate(const double seconds_to_simulate, const Assets* assets, const Scene* scene, const Configuration* config)
 {
-	simulate_AI(seconds_to_simulate, assets, scene, config, input);
+	simulate_AI(seconds_to_simulate, assets, scene, config);
 	simulate_physics(seconds_to_simulate, assets, scene, config);
 	render(seconds_to_simulate, assets, scene, config);
 }
-void Engine::simulate_AI(const double seconds_to_simulate, const Assets* assets, const Scene* scene, const Configuration* config, Input* input)
+void Engine::simulate_AI(const double seconds_to_simulate, const Assets* assets, const Scene* scene, const Configuration* config)
 {
 	for(auto game_object : scene->get_game_objects())
 	{
-		game_object->simulate_AI(seconds_to_simulate, assets, scene, config, input);
+		game_object->simulate_AI(seconds_to_simulate, assets, scene, config);
 	}
 }
 void Engine::simulate_physics(const double seconds_to_simulate, const Assets* assets, const Scene* scene, const Configuration* config)

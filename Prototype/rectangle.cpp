@@ -6,6 +6,7 @@
 
 #define GLEW_STATIC
 #include <glew.h>
+#include <glm/vec3.hpp>
 
 #include <vector>
 #include <math.h>
@@ -13,13 +14,19 @@
 Rectangle::Rectangle(const char* id)
 	: Game_Object(id)
 {
+	_scale.x = 4;
+	_scale.y = 4;
+	_scale.z = 4;
 }
+
 Rectangle::~Rectangle()
 {
 }
-void Rectangle::simulate_AI(const double, const Assets*, const Scene*, const Configuration*, Input*)
+
+void Rectangle::simulate_AI(const double, const Assets*, const Scene*, const Configuration*)
 {
 }
+
 void Rectangle::render(const double, const Assets* assets, const Scene* scene, const Configuration* config)
 {
 	const Textured_2D_Shader_Program* program =
