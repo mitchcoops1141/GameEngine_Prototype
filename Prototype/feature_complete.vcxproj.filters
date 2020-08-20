@@ -72,20 +72,11 @@
     <ClCompile Include="shader_program.cpp">
       <Filter>Source Files\Assets\Shader Programs</Filter>
     </ClCompile>
-    <ClCompile Include="pointy_head.cpp">
-      <Filter>Source Files\Game_Objects</Filter>
-    </ClCompile>
     <ClCompile Include="square_mesh.cpp">
       <Filter>Source Files\Assets\Meshes</Filter>
     </ClCompile>
-    <ClCompile Include="blocky_boy.cpp">
-      <Filter>Source Files\Game_Objects</Filter>
-    </ClCompile>
     <ClCompile Include="texture.cpp">
       <Filter>Source Files\Assets\Textures</Filter>
-    </ClCompile>
-    <ClCompile Include="airplane.cpp">
-      <Filter>Source Files\Game_Objects</Filter>
     </ClCompile>
     <ClCompile Include="masked_textured_2D_shader_program.cpp">
       <Filter>Source Files\Assets\Shader Programs</Filter>
@@ -95,9 +86,6 @@
     </ClCompile>
     <ClCompile Include="cube_mesh.cpp">
       <Filter>Source Files\Assets\Meshes</Filter>
-    </ClCompile>
-    <ClCompile Include="crazy_crate.cpp">
-      <Filter>Source Files\Game_Objects</Filter>
     </ClCompile>
     <ClCompile Include="textured_3D_shader_program.cpp">
       <Filter>Source Files\Assets\Shader Programs</Filter>
@@ -116,6 +104,18 @@
     </ClCompile>
     <ClCompile Include="hexagon.cpp">
       <Filter>Source Files\Game_Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="cubeSame.cpp">
+      <Filter>Source Files\Game_Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="cube_diferent.cpp">
+      <Filter>Source Files\Game_Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="cube_faces_mesh.cpp">
+      <Filter>Source Files\Assets\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -158,20 +158,11 @@
     <ClInclude Include="shader_program.h">
       <Filter>Source Files\Assets\Shader Programs</Filter>
     </ClInclude>
-    <ClInclude Include="pointy_head.h">
-      <Filter>Source Files\Game_Objects</Filter>
-    </ClInclude>
     <ClInclude Include="square_mesh.h">
       <Filter>Source Files\Assets\Meshes</Filter>
     </ClInclude>
-    <ClInclude Include="blocky_boy.h">
-      <Filter>Source Files\Game_Objects</Filter>
-    </ClInclude>
     <ClInclude Include="texture.h">
       <Filter>Source Files\Assets\Textures</Filter>
-    </ClInclude>
-    <ClInclude Include="airplane.h">
-      <Filter>Source Files\Game_Objects</Filter>
     </ClInclude>
     <ClInclude Include="masked_textured_2D_shader_program.h">
       <Filter>Source Files\Assets\Shader Programs</Filter>
@@ -181,9 +172,6 @@
     </ClInclude>
     <ClInclude Include="cube_mesh.h">
       <Filter>Source Files\Assets\Meshes</Filter>
-    </ClInclude>
-    <ClInclude Include="crazy_crate.h">
-      <Filter>Source Files\Game_Objects</Filter>
     </ClInclude>
     <ClInclude Include="textured_3D_shader_program.h">
       <Filter>Source Files\Assets\Shader Programs</Filter>
@@ -202,6 +190,18 @@
     </ClInclude>
     <ClInclude Include="hexagon.h">
       <Filter>Source Files\Game_Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="cubeSame.h">
+      <Filter>Source Files\Game_Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="cube_diferent.h">
+      <Filter>Source Files\Game_Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="cube_faces_mesh.h">
+      <Filter>Source Files\Assets\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

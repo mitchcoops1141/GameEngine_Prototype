@@ -3,6 +3,7 @@
 #include "scene.h"
 #include "configuration.h"
 #include "game_scene.h"
+#include "input.h"
 
 #include <glfw3.h>
 
@@ -18,6 +19,7 @@ int main(void)
 		Configuration* config = new Configuration();
 		Engine* engine        = new Engine("Game", config);
 		Assets* assets        = new Assets();
+		Input* input          =	new Input(engine->window());
 
 		std::stack<Scene*> scenes;
 		scenes.push(new Game_Scene());
@@ -31,9 +33,9 @@ int main(void)
 			const double previous_frame_duration_s = frame_end_time_s - frame_start_time_s;
 			frame_start_time_s                     = glfwGetTime();
 
-			glfwPollEvents();
-			scenes.top()->update(previous_frame_duration_s);
-			engine->simulate(previous_frame_duration_s, assets, scenes.top(), config);
+			input->update(engine->window());
+			scenes.top()->update(previous_frame_duration_s, input);
+			engine->simulate(previous_frame_duration_s, assets, scenes.top(), config, input);
 
 			const double current_time_s           = glfwGetTime();
 			const double current_frame_duration_s = current_time_s - frame_start_time_s;

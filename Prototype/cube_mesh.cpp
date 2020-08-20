@@ -49,13 +49,14 @@ Cube_Mesh::Cube_Mesh()
 	_verticies.insert(_verticies.end(), v3);
 	_verticies.insert(_verticies.end(), v4);
 	
-	
+
 	_texture_coordinates.insert(_texture_coordinates.end(), tl);
 	_texture_coordinates.insert(_texture_coordinates.end(), bl);
 	_texture_coordinates.insert(_texture_coordinates.end(), br);
 	_texture_coordinates.insert(_texture_coordinates.end(), tl);
 	_texture_coordinates.insert(_texture_coordinates.end(), br);
 	_texture_coordinates.insert(_texture_coordinates.end(), tr);
+
 	
 
 	// Right Face
@@ -66,14 +67,14 @@ Cube_Mesh::Cube_Mesh()
 	_verticies.insert(_verticies.end(), v7);
 	_verticies.insert(_verticies.end(), v8);
 
-	
+
 	_texture_coordinates.insert(_texture_coordinates.end(), tl);
 	_texture_coordinates.insert(_texture_coordinates.end(), bl);
 	_texture_coordinates.insert(_texture_coordinates.end(), br);
 	_texture_coordinates.insert(_texture_coordinates.end(), tl);
 	_texture_coordinates.insert(_texture_coordinates.end(), br);
 	_texture_coordinates.insert(_texture_coordinates.end(), tr);
-	
+
 
 	// Back Face
 	_verticies.insert(_verticies.end(), v8);
@@ -83,14 +84,14 @@ Cube_Mesh::Cube_Mesh()
 	_verticies.insert(_verticies.end(), v6);
 	_verticies.insert(_verticies.end(), v5);
 
-	
+
 	_texture_coordinates.insert(_texture_coordinates.end(), tl);
 	_texture_coordinates.insert(_texture_coordinates.end(), bl);
 	_texture_coordinates.insert(_texture_coordinates.end(), br);
 	_texture_coordinates.insert(_texture_coordinates.end(), tl);
 	_texture_coordinates.insert(_texture_coordinates.end(), br);
 	_texture_coordinates.insert(_texture_coordinates.end(), tr);
-	
+
 	
 	// Left Face
 	_verticies.insert(_verticies.end(), v5);
@@ -100,7 +101,7 @@ Cube_Mesh::Cube_Mesh()
 	_verticies.insert(_verticies.end(), v2);
 	_verticies.insert(_verticies.end(), v1);
 
-	
+
 	_texture_coordinates.insert(_texture_coordinates.end(), tl);
 	_texture_coordinates.insert(_texture_coordinates.end(), bl);
 	_texture_coordinates.insert(_texture_coordinates.end(), br);

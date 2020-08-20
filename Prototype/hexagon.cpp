@@ -20,7 +20,7 @@ Hexagon::~Hexagon()
 {
 }
 
-void Hexagon::simulate_AI(const double, const Assets*, const Scene*, const Configuration*)
+void Hexagon::simulate_AI(const double, const Assets*, const Scene*, const Configuration*, Input*)
 {
 }
 

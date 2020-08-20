@@ -23,7 +23,7 @@ Right_Angle::~Right_Angle()
 {
 }
 
-void Right_Angle::simulate_AI(const double, const Assets*, const Scene*, const Configuration*)
+void Right_Angle::simulate_AI(const double, const Assets*, const Scene*, const Configuration*, Input*)
 {
 }
 

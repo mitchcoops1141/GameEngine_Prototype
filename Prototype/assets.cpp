@@ -10,6 +10,7 @@
 #include "colored_3D_shader_program.h"
 #include "cube_mesh.h"
 #include "hexagon_mesh.h"
+#include "cube_faces_mesh.h"
 
 #define GLEW_STATIC
 #include <glew.h>
@@ -32,18 +33,6 @@ Assets::Assets()
 
 	Square_Mesh* square_mesh = new Square_Mesh();
 	_assets.insert({square_mesh->id(), square_mesh});
-
-	Texture* airplane_sprite = new Texture("Sprite.Airplane", "Assets/sprite.airplane.png");
-	_assets.insert({airplane_sprite->id(), airplane_sprite});
-
-	Texture* airplane_background_mask = new Texture("Mask.Airplane_Background", "Assets/mask.airplane_background.png");
-	_assets.insert({airplane_background_mask->id(), airplane_background_mask});
-
-	Texture* airplane_mask = new Texture("Mask.Airplane", "Assets/mask.airplane.png");
-	_assets.insert({airplane_mask->id(), airplane_mask});
-
-	Texture* polygons_mask = new Texture("Mask.Polygons", "Assets/mask.polygons.png");
-	_assets.insert({polygons_mask->id(), polygons_mask});
 
 	Shader* textured_2D_vertex_shader = new Shader("Shader.Textured.2D.Vertex", "Shaders/textured.2D.vertex_shader.glsl", Shader::Type::Vertex);
 	_assets.insert({textured_2D_vertex_shader->id(), textured_2D_vertex_shader});
@@ -98,6 +87,16 @@ Assets::Assets()
 
 	Texture* texture_hexagon = new Texture("Texture.Hexagon", "Assets/texture.hexagon.jpg");
 	_assets.insert({ texture_hexagon->id(), texture_hexagon });
+
+	Texture* dirt_block = new Texture("Texture.Dirt_Block", "Assets/texture.dirt_block.png");
+	_assets.insert({ dirt_block->id(), dirt_block });
+
+	Texture* texture_dice = new Texture("Texture.Dice", "Assets/texture.dice.png");
+	_assets.insert({ texture_dice->id(), texture_dice });
+
+	Cube_Faces_Mesh* cube_faces_mesh = new Cube_Faces_Mesh();
+	_assets.insert({ cube_faces_mesh->id(), cube_faces_mesh });
+
 }
 Assets::~Assets()
 {

@@ -13,10 +13,13 @@ public:
 	Scene(const char* id);
 	~Scene();
 
-	virtual void update(const double seconds_to_simulate) = 0;
+	virtual void update(const double seconds_to_simulate, Input* input) = 0;
 
 	Game_Object* get_game_object(const char* id) const;
 	std::vector<Game_Object*> get_game_objects() const;
+
+	void add_game_object(Game_Object* game_object);
+	void remove_game_object(std::string id);
 
 	const char* id() const;
 

@@ -23,7 +23,7 @@ Rectangle::~Rectangle()
 {
 }
 
-void Rectangle::simulate_AI(const double, const Assets*, const Scene*, const Configuration*)
+void Rectangle::simulate_AI(const double, const Assets*, const Scene*, const Configuration*, Input*)
 {
 }
 
