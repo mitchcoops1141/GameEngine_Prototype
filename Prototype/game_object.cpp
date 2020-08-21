@@ -43,4 +43,3 @@ glm::mat4x4 Game_Object::transformation(const Scene*, const Configuration* confi
 
 	return projection * model;
 }
-

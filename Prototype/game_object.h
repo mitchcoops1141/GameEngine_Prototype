@@ -16,7 +16,7 @@ class Game_Object
 {
 public:
 	Game_Object(const char* id);
-	~Game_Object();
+	virtual ~Game_Object();
 
 	const char* id() const;
 

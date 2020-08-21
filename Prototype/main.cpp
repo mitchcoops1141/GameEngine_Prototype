@@ -4,6 +4,7 @@
 #include "configuration.h"
 #include "game_scene.h"
 #include "input.h"
+#include "game_object.h"
 
 #include <glfw3.h>
 

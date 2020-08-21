@@ -117,6 +117,12 @@
     <ClCompile Include="input.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pyramid_mesh.cpp">
+      <Filter>Source Files\Assets\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="pyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="asset.h">
@@ -202,6 +208,12 @@
     </ClInclude>
     <ClInclude Include="input.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pyramid_mesh.h">
+      <Filter>Source Files\Assets\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="pyramid.h">
+      <Filter>Source Files\Game_Objects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

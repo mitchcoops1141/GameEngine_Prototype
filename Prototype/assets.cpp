@@ -11,6 +11,7 @@
 #include "cube_mesh.h"
 #include "hexagon_mesh.h"
 #include "cube_faces_mesh.h"
+#include "pyramid_mesh.h"
 
 #define GLEW_STATIC
 #include <glew.h>
@@ -96,6 +97,12 @@ Assets::Assets()
 
 	Cube_Faces_Mesh* cube_faces_mesh = new Cube_Faces_Mesh();
 	_assets.insert({ cube_faces_mesh->id(), cube_faces_mesh });
+
+	Pyramid_Mesh* pyramid_mesh = new Pyramid_Mesh();
+	_assets.insert({ pyramid_mesh->id(), pyramid_mesh });
+
+	Texture* pyramid_texture = new Texture("Texture.Pyramid", "Assets/texture.pyramid.jpg");
+	_assets.insert({ pyramid_texture->id(), pyramid_texture });
 
 }
 Assets::~Assets()

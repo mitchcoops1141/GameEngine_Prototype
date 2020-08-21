@@ -153,8 +153,10 @@
     <ClCompile Include="hexagon.cpp" />
     <ClCompile Include="hexagon_mesh.cpp" />
     <ClCompile Include="input.cpp" />
+    <ClCompile Include="pyramid.cpp" />
     <ClCompile Include="rectangle.cpp" />
     <ClCompile Include="right_angle.cpp" />
+    <ClCompile Include="pyramid_mesh.cpp" />
     <ClCompile Include="textured_2D_shader_program.cpp" />
     <ClCompile Include="asset.cpp" />
     <ClCompile Include="assets.cpp" />
@@ -182,8 +184,10 @@
     <ClInclude Include="hexagon.h" />
     <ClInclude Include="hexagon_mesh.h" />
     <ClInclude Include="input.h" />
+    <ClInclude Include="pyramid.h" />
     <ClInclude Include="rectangle.h" />
     <ClInclude Include="right_angle.h" />
+    <ClInclude Include="pyramid_mesh.h" />
     <ClInclude Include="textured_2D_shader_program.h" />
     <ClInclude Include="asset.h" />
     <ClInclude Include="assets.h" />
