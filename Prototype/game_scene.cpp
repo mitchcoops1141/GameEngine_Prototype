@@ -23,6 +23,7 @@ Game_Scene::~Game_Scene()
 
 void Game_Scene::update(const double, Input* input)
 {
+	//create the objects
 	Rectangle* rectangle = new Rectangle("Game_Object.Rectangle");
 	Right_Angle* right_angle = new Right_Angle("Game_Object.Right_Angle");
 	Hexagon* hexagon = new Hexagon("Game_Object.Hexagon");
@@ -30,9 +31,10 @@ void Game_Scene::update(const double, Input* input)
 	Cube_Diferent* cube_diferent = new Cube_Diferent("Game_Object.Cube_Diferent");
 	Pyramid* pyramid = new Pyramid("Game_Object.Pyramid");
 
-
+	//if button press is 1
 	if (input->is_button_state(Input::Button::One, Input::Button_State::PRESSED))
 	{
+		//remove and delete every object other then the rectangle
 		remove_game_object(right_angle->id());
 		delete right_angle;
 		remove_game_object(hexagon->id());
@@ -48,6 +50,7 @@ void Game_Scene::update(const double, Input* input)
 	}
 	if (input->is_button_state(Input::Button::Two, Input::Button_State::PRESSED))
 	{
+		//remove and delete every object other then the triangle
 		remove_game_object(rectangle->id());
 		delete rectangle;
 		remove_game_object(hexagon->id());
@@ -63,6 +66,7 @@ void Game_Scene::update(const double, Input* input)
 	}
 	if (input->is_button_state(Input::Button::Three, Input::Button_State::PRESSED))
 	{
+		//remove and delete every object other then the ehxagon
 		remove_game_object(rectangle->id());
 		delete rectangle;
 		remove_game_object(right_angle->id());
@@ -78,6 +82,7 @@ void Game_Scene::update(const double, Input* input)
 	}
 	if (input->is_button_state(Input::Button::Four, Input::Button_State::PRESSED))
 	{
+		//remove and delete every object other then the cube same
 		remove_game_object(rectangle->id());
 		delete rectangle;
 		remove_game_object(right_angle->id());
@@ -93,6 +98,7 @@ void Game_Scene::update(const double, Input* input)
 	}
 	if (input->is_button_state(Input::Button::Five, Input::Button_State::PRESSED))
 	{
+		//remove and delete every object other then the cube diferent
 		remove_game_object(rectangle->id());
 		delete rectangle;
 		remove_game_object(right_angle->id());
@@ -108,6 +114,7 @@ void Game_Scene::update(const double, Input* input)
 	}
 	if (input->is_button_state(Input::Button::Six, Input::Button_State::PRESSED))
 	{
+		//remove and delete every object other then the pyramid
 		remove_game_object(rectangle->id());
 		delete rectangle;
 		remove_game_object(right_angle->id());
